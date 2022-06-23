@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASKUp</title>
+</head>
+
+<body>
+    <div class="color">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="cadrt.html"><img class="x" src="images/1.png" width="75px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="cadrt.html">HOME</a></li>
+                        <li><a href="product.html">PRODUCT</a></li>
+                        <li><a href="productdetail.html">DETAILS</a></li>
+                        <li><a href="covid.html">COINFO</a></li>
+                        <li><a href="about us.html">ABOUT</a></li>
+                        <li><a href="account.html">ACCOUNT</a></li>
+                    </ul>
+
+                </nav>
+                <a href="shoppingcart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menuicon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+    <div class="account-page">
+        <div class="clsa">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <video class="vi" src="images/production ID_4297986.mp4" muted loop autoplay></video>
+                    </div>
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <div class="form-toggle">
+                                    <span id="login-toggle" onclick="toggleLogin()">Login</span>
+                                    <span id="signup-toggle" onclick="toggleSignup()">Sign Up</span>
+                                    <hr id="Indicator">
+                                </div>
+                            </div>
+                            <div id="login-form">
+                                <form id="Loginform">
+
+                                    <input type="text " name="username" placeholder="username">
+                                    <input type="password" name="password" placeholder="password">
+                                    <button type="submit" class="btn" id="login-form-submit" value="Login"
+                                        class="btn login" onclick="login()">Login</button>
+                                    <a href="">forgot password</a>
+                                    <p><a href="javascript:void(0)" onclick="toggleSignup()">Register Account</a> </p>
+
+                                </form>
+                            </div>
+                            <div id="signup-form">
+                                <form action="" id="Registerform">
+                                    <input type="text " placeholder="username">
+                                    <input type="email" placeholder="email">
+                                    <input type="password" placeholder="password">
+                                    <button type="submit" class="btn">Register</button>
+
+                                </form>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
+<!------footer------>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Download our MASKUP app for both iOS and Android! Whether you want to buy a Mask
+                    or get info about covid - try our top rated application today. Sign up.</p>
+                <div class="addlogo">
+                    <img src="images/app-store.png">
+                    <img src="images/play-store.png">
+                </div>
+
+            </div>
+
+
+            <div class="footer-col-2">
+                <a href="cadrt.html"><img class="y" src="images/1.png" width="75px"></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    repellat.</p>
+            </div>
+            <div class="footer-col-3" <h3>Useful link</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>blog post</li>
+                    <li>return policy</li>
+                    <li>join afficiancy</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>follow us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com">Facebook</a></li>
+                    <li><a href="https://www.instagram.com">instagram</a></li>
+                    <li>
+                        <a href="https://www.twitter.com">Twitter</a>
+                    </li>
+
+                    <li><a href="https://www.youtube.com/search">You tube</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <hr>
+        <p class="copyright">copyright 2022 --- MASKUP</p>
+    </div>
+</div>
+
+
+<script>
+    function toggleSignup() {
+        document.getElementById("login-toggle").style.backgroundColor = "#fff";
+        document.getElementById("login-toggle").style.color = "#222";
+        document.getElementById("signup-toggle").style.backgroundColor = "#57b846";
+        document.getElementById("signup-toggle").style.color = "#fff";
+        document.getElementById("login-form").style.display = "none";
+        document.getElementById("signup-form").style.display = "block";
+    }
+
+    function toggleLogin() {
+        document.getElementById("login-toggle").style.backgroundColor = "#57B846";
+        document.getElementById("login-toggle").style.color = "#fff";
+        document.getElementById("signup-toggle").style.backgroundColor = "#fff";
+        document.getElementById("signup-toggle").style.color = "#222";
+        document.getElementById("signup-form").style.display = "none";
+        document.getElementById("login-form").style.display = "block";
+    }
+    const loginForm = document.getElementById("Loginform");
+    const loginButton = document.getElementById("login-form-submit");
+
+    function login() {
+        const username = loginForm.username.value;
+        const password = loginForm.password.value;
+
+        if (username === "MASKUP" && password === "gagan@2002") {
+            location.href = "cardt.html";
+
+        } else {
+            alert("ENTERED INFORMATION IS WRONG!");
+        }
+    }
+</script>
+
+<script>
+
+    var Loginform = document.getElementById("Loginform")
+    var Registerform = document.getElementById("Registerform")
+    var Indicator = document.getElementById("Indicator")
+
+
+    function toggleSignup() {
+
+        Registerform.style.transform = "translateX(0px)"
+        Loginform.style.transform = "translateX(0px)"
+        Indicator.style.transform = "translateX(100px)"
+    }
+    function toggleLogin() {
+
+        Registerform.style.transform = "translateX(300px)"
+        Loginform.style.transform = "translateX(300px)"
+        Indicator.style.transform = "translateX(0px)"
+    }
+
+</script>
+
+
+
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if (MenuItems.style.maxHeight == '0px') {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else {
+            MenuItems.style.maxHeight = "0px";
+
+        }
+    }
+</script>

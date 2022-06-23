@@ -1,0 +1,573 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+
+    scroll-behavior: smooth;
+}
+
+header {
+
+    width: 100vw;
+    height: 85vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/vaccine-5926664_1920.jpg')no-repeat center center/cover;
+
+}
+
+.logo {
+    font-size: 35px;
+    color: white;
+    padding: 4px;
+    margin: 6px;
+    text-align: center;
+    margin-left: 30px;
+
+
+}
+
+.logo span {
+    color: rgb(30, 177, 214);
+
+}
+
+.navbar {
+    width: 100%;
+    min-height: 70px;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar ul {
+    display: flex;
+    margin-right: 40px;
+
+}
+
+.navbar li a {
+    margin: 10px;
+    padding: 4px;
+    text-decoration: none;
+
+    font-size: 20px;
+    color: white;
+
+
+}
+
+.navbar li {
+    list-style: none;
+    overflow: hidden;
+}
+
+#one:hover {
+    color: rgb(30, 177, 214);
+
+}
+
+.navbar li a:hover {
+    color: rgb(30, 177, 214);
+    /* text-decoration:underline;
+    text-decoration-color:rgb(30, 177, 214) ; */
+
+
+}
+
+.first {
+    text-align: center;
+    margin: 95px;
+    font-size: 70px;
+    color: white;
+    /* margin-left: 144px; */
+    border-bottom: 2px solid black;
+
+}
+
+.heading {
+    color: rgb(30, 177, 214);
+
+}
+
+.firstheading {
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    color: white;
+}
+
+.diffvaccines {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/syringe-5873159_1920.jpg')no-repeat center center/cover;
+    margin-top: 0px;
+    width: 100vw;
+
+}
+
+.vaccine {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    box-shadow: 4px 4px 4px black;
+    margin: 14px 0px;
+    align-items: center;
+}
+
+.vaccine div {
+    width: 450px;
+
+    transition: 2s ease;
+    padding: 10px;
+    align-content: center;
+}
+
+.vaccine img {
+    height: 300px;
+    width: 300px;
+
+
+
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.vaccine img:hover {
+
+    cursor: pointer;
+}
+
+.vaccine h3 {
+    font-size: 35px;
+    text-align: center;
+    margin: 6px;
+    color: rgb(30, 177, 214);
+}
+
+.vaccine p {
+    font-size: 17px;
+    color: white;
+}
+
+.vaccine span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.third {
+
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    /* background: linear-gradient(to left,white,black); */
+}
+
+.third3 {
+    width: 50%;
+    text-align: center;
+    color: black;
+    /* margin-left:53px; */
+}
+
+.third img {
+    min-height: 100%;
+    width: 50%;
+
+
+}
+
+.thirdheading {
+    font-size: 50px;
+    text-decoration: underline;
+    margin-top: 15px;
+}
+
+.q {
+    /* border:2px solid black; */
+
+
+    height: 200px;
+    text-align: center;
+    overflow-wrap: break-word;
+    padding: 60px;
+    overflow: hidden;
+
+}
+
+.special {
+    margin-top: 20px;
+}
+
+.q h3 {
+    font-size: 20px;
+    color: rgb(30, 177, 214);
+    margin: 6px;
+
+}
+
+.q p {
+    font-size: 15px;
+    overflow-y: hidden;
+}
+
+.fourth {
+    text-align: center;
+    border: 2px solid black;
+    width: 100w;
+    /* border-radius:20px;  */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/mask-4898571_1920.jpg')no-repeat center center/cover;
+
+}
+
+.fourthheading {
+    text-align: center;
+    font-size: 60px;
+    margin: 10px;
+    /* text-decoration: underline; */
+    color: white;
+}
+
+.fourth span {
+    color: rgb(30, 177, 214);
+}
+
+.fourth p {
+    text-align: center;
+    font-size: 25px;
+    margin: 15px;
+    color: white;
+}
+
+.fourth h2 {
+    text-align: center;
+    font-size: 35px;
+    margin: 10px;
+    /* text-decoration: underline; */
+    color: white;
+}
+
+.fourth ul {
+    overflow-y: hidden;
+}
+
+.fourth li {
+    margin: 33px 0px;
+    font-size: 30px;
+}
+
+.fourth li a {
+    text-decoration: none;
+    color: rgb(30, 177, 214);
+}
+
+.fourth li a:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.button {
+    position: absolute;
+    top: 19px;
+    right: 37px;
+    width: 30px;
+    height: 25px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.line {
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+
+@media (max-width:1330px) {
+
+    .third {
+        flex-direction: column;
+        justify-content: center;
+
+        width: 100vw;
+        /* margin-left:0px; */
+    }
+
+    .third3 {
+        /* margin-left: 0px; */
+        width: 100vw;
+    }
+
+    .third3 h1 {
+        width: 100vw;
+        text-align: center;
+
+    }
+
+    .about {
+        flex-direction: column;
+        width: 100vw;
+        justify-content: center;
+        /* margin-left: 0px; */
+    }
+
+    .third img {
+        min-width: 100vw;
+    }
+}
+
+@media (max-width:1172px) {
+
+
+    .button {
+        display: flex;
+    }
+
+    .navbar {
+
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        text-align: center;
+        margin: 10px;
+    }
+
+    .first {
+        font-size: 40px;
+    }
+
+    .header {
+        width: 100vw;
+        margin-right: 0px;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .q {
+        overflow-y: scroll;
+    }
+}
+
+@media(max-width:830px) {
+
+    .q h3 {
+        font-size: 17px;
+    }
+
+    .q p {
+        font-size: 12px;
+    }
+
+    .firstheading {
+        font-size: 30px;
+    }
+
+    .vaccine h3 {
+        font-size: 22px;
+    }
+
+    .vaccine p {
+        font-size: 14px;
+    }
+
+    .fourthheading {
+        font-size: 40px;
+
+
+    }
+
+    .fourth p {
+        font-size: 15px;
+    }
+
+    .fourth h2 {
+        font-size: 18px;
+    }
+
+    .fourth li {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:670px) {
+    .vaccine p {
+        font-size: 13px;
+    }
+
+    .vaccine span {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:500px) {
+    .vaccine img {
+        height: 200px;
+    }
+
+    .fourth li {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:410px) {
+    .first {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:350px) {
+    .first {
+        font-size: 28px;
+        margin: 80px;
+    }
+
+    .firstheading {
+        font-size: 25px;
+    }
+}
+
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.footer {
+    background: #000;
+    background-color: #000;
+    color: #8a8a8a;
+    padding: 60px 0 20px;
+    font-size: 14px;
+}
+
+.footer p {
+    color: #8a8a8a
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1 {
+    flex-basis: 30%;
+}
+
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3,
+.footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.addlogo {
+    margin-top: 20px;
+
+}
+
+.addlogo img {
+    width: 140px;
+}
+
+.footer-col-4 ul li {
+    color: white;
+    transform: 0.5s;
+
+}
+
+.footer-col-4 ul li:hover {
+    text-decoration: underline;
+    color: white;
+
+}
+
+.footer hr {
+    border: none;
+    height: 1px;
+    margin: 20px 0;
+    background: #b5b5b5;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.menuicon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+
+
+.x {
+    border-radius: 10px;
+    background-color: #000;
+    transition: 0.5s;
+}
+
+.y {
+    border-radius: 20px;
+    background-color: #000;
+    transition: 0.5s;
+}
+
+.y:hover {
+    transform: translateY(-10px);
+}
+
+.x:hover {
+    transform: translateY(-2px);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <div class="centre">
+        <h1>Login</h1>
+        <form action="cadrt.html" method="post">
+            <div class="textfield">
+                <input type="text" name="name" id="name" name="uname" required>
+                <span></span>
+                <label for="name">username</label>
+
+
+
+            </div>
+            <div class="textfield">
+                <input type="password" name="password" id="password" name="psw" required>
+                <span></span>
+                <label for="password">password</label>
+
+
+            </div>
+            <div class="pass">Forgot password</div>
+            <input type="submit" value="Login">
+            <div class="sign_uplink">not a memeber
+                <a href="cadrt.html">Signup</a>
+            </div>
+        </form>
+    </div>
+
+
+    <script>
+        var connection = mysql.createConnection({
+            host: 'admin',
+            user: 'admin',
+            password: '1234',
+            database: 'simple_login_system_v1'
+        });
+    </script>
+</body>
+
+</html>
